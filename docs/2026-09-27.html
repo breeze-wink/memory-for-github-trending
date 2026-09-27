@@ -18,79 +18,80 @@
   <section class="themes">
     <h2>Today's themes</h2>
     <ul>
-      <li>Multi-agent orchestration for coding agents is the strongest thread: openrig (harnessing Claude Code + Codex as one system) and paperclip (running whole "AI agent companies") both trend, alongside a memory layer (hindsight) built for agents specifically.</li>
-      <li>Local-first, open-source clones of paid AI products are pulling outsized numbers &mdash; VoiceStudio positions directly against ElevenLabs and is the day's #2 repo by raw stars-today despite being #4 by momentum.</li>
-      <li>This is still the first calendar day in this repository's memory (no earlier-dated reports exist yet), so every repo below counts as NEW by definition; the NEW/RETURNING split becomes meaningful starting tomorrow.</li>
+      <li>AI-agent infrastructure dominates: orchestration (Paperclip, OpenRig), agent memory (Hindsight), and agent-oriented education (AI Engineering from Scratch) fill four of nine new entries.</li>
+      <li>Local-first, self-hosted alternatives to paid AI services are trending, led by VoiceStudio's fully offline ElevenLabs alternative.</li>
+      <li>A pair of "closer to the metal" systems projects &mdash; a TypeScript-to-native compiler and an iOS Windows-game emulation stack &mdash; show renewed interest in bypassing runtime overhead.</li>
+      <li>Note: this environment's network policy blocks direct HTML scraping of github.com, so today's list was read through a summarizing fetch tool and covers only the 9 repositories it surfaced, not the usual 15&ndash;25.</li>
     </ul>
   </section>
   <h2>New today</h2>
   <article class="repo">
     <div class="repo-head"><span class="rank">01</span><h3><a href="https://github.com/willfaust/Madeira">willfaust/<b>Madeira</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#555555"></i>C</span><span>★ 690</span><span class="today">+171 today</span></div>
-    <div class="momentum"><span class="track"><span class="fill" style="--m:83%"></span></span>momentum 24.8%</div>
-    <p class="what">A research project that runs x86-64 Windows PC games on non-jailbroken iPhones by combining a Wine fork, FEX-Emu (x86-64&rarr;ARM64 translation) and DXMT (Direct3D 11&rarr;Metal), all inside a single Mach process. It competes with jailbreak-only emulation setups, not with any commercial product.</p>
-    <div class="why evidence"><span class="tag">Evidence</span><p>Taiwanese tech outlet <a href="https://en.kocpc.com.tw/archives/25390">KOCPC</a> covered the project today under the headline "Madeira open-source project gets Cyberpunk 2077 running on phones," noting it also runs Stray, ULTRAKILL and Thumper with no cloud streaming. The author started the project in March 2026 and frames it as a rough research prototype, but the press pickup lines up with the stars-today spike.</p></div>
+    <div class="meta"><span class="lang"><i style="--c:#555555"></i>C</span><span>★ 708</span><span class="today">+171 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:81%"></span></span>momentum 24.2%</div>
+    <p class="what">Madeira runs x86-64 Windows PC games on a non-jailbroken iPhone by chaining Wine, FEX-Emu, and DXMT into one process. It targets hobbyist iOS tinkerers rather than mainstream gamers, with little direct competition since most similar efforts require jailbreaking.</p>
+    <div class="why guess"><span class="tag">Guess</span><p>Dozens of near-identical forks appeared within days of each other, consistent with the project being freshly shared and copied across social media or Discord; no single press hit was found.</p></div>
   </article>
   <article class="repo">
     <div class="repo-head"><span class="rank">02</span><h3><a href="https://github.com/mvschwarz/openrig">mvschwarz/<b>openrig</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 632</span><span class="today">+114 today</span></div>
-    <div class="momentum"><span class="track"><span class="fill" style="--m:60%"></span></span>momentum 18.0%</div>
-    <p class="what">A CLI/TUI/MCP-server harness that runs Claude Code and Codex sessions together as one coordinated "rig," defined via YAML topologies (pods, edges, continuity policies) over tmux. It's aimed at developers who already run multiple coding agents and want them organized as a team rather than loose terminal panes.</p>
-    <div class="why evidence"><span class="tag">Evidence</span><p><a href="https://news.ycombinator.com/item?id=47772935">Show HN: OpenRig</a> (agent harness that runs Claude Code and Codex as one system) posted this week, with a follow-up <a href="https://news.ycombinator.com/item?id=48241066">Show HN: a control plane for multi-agent coding topologies</a>; front-page HN traffic lines up with the stars-today spike.</p></div>
+    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 660</span><span class="today">+114 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:58%"></span></span>momentum 17.3%</div>
+    <p class="what">OpenRig is a harness that boots and coordinates teams of Claude Code and Codex agent sessions from a single YAML spec, giving them shared topology, messaging, and persistent state via tmux. It competes with ad-hoc multi-terminal agent setups and other emerging "agent team" orchestrators like Paperclip.</p>
+    <div class="why evidence"><span class="tag">Evidence</span><p>A <a href="https://news.ycombinator.com/item?id=47772935">Show HN post</a> plus a burst of releases, including v0.5.17 shipped today and v0.5.15/v0.5.16 on the two days prior.</p></div>
   </article>
   <article class="repo">
     <div class="repo-head"><span class="rank">03</span><h3><a href="https://github.com/vectorize-io/hindsight">vectorize-io/<b>hindsight</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#3572A5"></i>Python</span><span>★ 35,383</span><span class="today">+4,463 today</span></div>
-    <div class="momentum"><span class="track"><span class="fill" style="--m:42%"></span></span>momentum 12.6%</div>
-    <p class="what">An agent memory system built to behave like human memory &mdash; time- and entity-aware recall, belief formation with confidence scores &mdash; positioned as a replacement for RAG/knowledge-graph memory stacks. Backed by Vectorize.io, a company with an existing hosted-database business and enterprise customers.</p>
-    <div class="why evidence"><span class="tag">Evidence</span><p>Company blog post <a href="https://vectorize.io/blog/introducing-hindsight-agent-memory-that-works-like-human-memory">"Introducing Hindsight"</a> announces it as newly fully open-sourced, paired with a co-authored arXiv paper (<a href="https://arxiv.org/abs/2512.12818">"Hindsight is 20/20"</a>) claiming state-of-the-art results on LongMemEval, independently reproduced by Virginia Tech's Sanghani Center and The Washington Post &mdash; a credible research launch, not just a repo dump. The project also just shipped a managed "Hindsight Cloud" offering.</p></div>
+    <div class="meta"><span class="lang"><i style="--c:#3572A5"></i>Python</span><span>★ 35,636</span><span class="today">+4,463 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:42%"></span></span>momentum 12.5%</div>
+    <p class="what">Hindsight is an agent memory system that stores facts, experiences, and beliefs in biomimetic structures and updates them over time, aimed at developers building long-running conversational or autonomous agents. It competes with RAG pipelines and knowledge-graph memory tools.</p>
+    <div class="why evidence"><span class="tag">Evidence</span><p>Release v0.10.1 shipped 2026-09-21 (6 days ago), backed by an <a href="https://arxiv.org/pdf/2512.12818">arXiv paper</a> co-authored with Virginia Tech and The Washington Post plus VentureBeat coverage.</p></div>
   </article>
   <article class="repo">
     <div class="repo-head"><span class="rank">04</span><h3><a href="https://github.com/debpalash/VoiceStudio">debpalash/<b>VoiceStudio</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#3572A5"></i>Python</span><span>★ 38,749</span><span class="today">+3,060 today</span></div>
+    <div class="meta"><span class="lang"><i style="--c:#3572A5"></i>Python</span><span>★ 38,891</span><span class="today">+3,060 today</span></div>
     <div class="momentum"><span class="track"><span class="fill" style="--m:26%"></span></span>momentum 7.9%</div>
-    <p class="what">A fully local, open-source voice toolkit &mdash; cloning, voice design, dubbing, dictation, transcription and audiobook creation across 646 languages &mdash; explicitly pitched as an ElevenLabs alternative that never sends audio off-device.</p>
-    <div class="why evidence"><span class="tag">Evidence</span><p>Coverage today from <a href="https://kil0bit.blogspot.com/2026/09/voicestudio-free-open-source-elevenlabs.html">kil0bit</a> ("The Free, Open-Source ElevenLabs Alternative Running 100% Offline") plus multiple other blog write-ups this week (dev.to, CoddyKit, Synapnews) tracking its rapid climb past 38k stars &mdash; a genuine viral spike, not slow organic growth.</p></div>
+    <p class="what">VoiceStudio is a fully local voice-cloning, dubbing, transcription, and audiobook suite bundling 16 TTS and 11 ASR engines, aimed at creators who want ElevenLabs-grade output with no account or cloud dependency. It directly targets ElevenLabs as its commercial competitor.</p>
+    <div class="why evidence"><span class="tag">Evidence</span><p>Release v0.5.6 shipped 2026-09-23 (4 days ago) adding Twilio phone integration and MCP support, alongside a <a href="https://dev.to/terminalchai/voicestudio-a-100-local-open-source-alternative-to-elevenlabs-4bd">dev.to writeup</a> and pickup on X.</p></div>
   </article>
   <article class="repo">
     <div class="repo-head"><span class="rank">05</span><h3><a href="https://github.com/dream-num/univer">dream-num/<b>univer</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 19,884</span><span class="today">+920 today</span></div>
+    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 19,930</span><span class="today">+920 today</span></div>
     <div class="momentum"><span class="track"><span class="fill" style="--m:15%"></span></span>momentum 4.6%</div>
-    <p class="what">An open-source SDK for building office apps &mdash; spreadsheets, docs, slides, boards, structured-data "bases" and PDFs &mdash; in one canvas-rendered runtime, now explicitly marketed as an "Office Harness for AI Agents" with a Server SDK and AI SDK for agent-driven document work.</p>
-    <div class="why evidence"><span class="tag">Evidence</span><p><a href="https://github.com/dream-num/univer/releases/tag/v1.0.0">v1.0.0 shipped September 24</a>, a major version bringing all six editors together with breaking API changes, followed by quick patch releases v1.0.1 and v1.0.2 (also Sept 24) fixing PDF import and chart rendering &mdash; an active post-launch push exactly the kind that drives a trending bump.</p></div>
+    <p class="what">Univer is an embeddable Office SDK &mdash; spreadsheets, docs, slides, and PDFs &mdash; built on a shared plugin and canvas-rendering architecture, competing with commercial embed SDKs and libraries like Luckysheet. It's now pitched as "the Office Harness for AI Agents," layering agent-facing APIs on its existing editors.</p>
+    <div class="why guess"><span class="tag">Guess</span><p>The repo is well-established (already past a 1.0 release), so today's bump most likely reflects its recent repositioning toward AI-agent integration rather than one dated event; no specific announcement was confirmed.</p></div>
   </article>
   <article class="repo">
     <div class="repo-head"><span class="rank">06</span><h3><a href="https://github.com/paperclipai/paperclip">paperclipai/<b>paperclip</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 88,581</span><span class="today">+2,527 today</span></div>
-    <div class="momentum"><span class="track"><span class="fill" style="--m:10%"></span></span>momentum 2.9%</div>
-    <p class="what">An orchestration platform that runs teams of AI agents like a company &mdash; org charts, budgets, governance and task assignment via heartbeats and event triggers &mdash; built as a Node.js server with a React dashboard. It's the most established repo on today's list, launched in March 2026.</p>
-    <div class="why evidence"><span class="tag">Evidence</span><p>Release v2026.916.1 shipped September 21 (6 days ago), following the larger v2026.916.0 (AgentMail, chat connectors, GitHub identity management); the "AI agent company" narrative keeps drawing fresh attention even months after launch, and the repo is now closing in on 90k stars.</p></div>
+    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 88,711</span><span class="today">+2,527 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:9%"></span></span>momentum 2.8%</div>
+    <p class="what">Paperclip is an orchestration platform that manages teams of AI agents like company employees, adding org charts, budgets, and governance on top of existing agent frameworks. It competes with lighter-weight orchestrators such as OpenRig by targeting larger, structured "agent workforces."</p>
+    <div class="why evidence"><span class="tag">Evidence</span><p>Its original <a href="https://www.indiehackers.com/post/building-paperclip-the-ai-agent-orchestration-platform-that-almost-didnt-happen-174e511161">Hacker News launch</a> already carried it past 88k stars, it shipped release v2026.916.1 on 2026-09-21 (6 days ago), and it drew security-focused press in August over agent-import command-injection flaws.</p></div>
   </article>
   <article class="repo">
     <div class="repo-head"><span class="rank">07</span><h3><a href="https://github.com/InfinityLoop1308/PipePipe">InfinityLoop1308/<b>PipePipe</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#8b8b8b"></i>Shell</span><span>★ 6,390</span><span class="today">+139 today</span></div>
+    <div class="meta"><span class="lang"><i style="--c:#8b8b8b"></i>Shell</span><span>★ 6,420</span><span class="today">+139 today</span></div>
     <div class="momentum"><span class="track"><span class="fill" style="--m:7%"></span></span>momentum 2.2%</div>
-    <p class="what">An independent, feature-heavy fork of NewPipe for Android &mdash; SponsorBlock, ReturnYouTubeDislike, danmaku overlays, AV1/VP9 support &mdash; for people who want a YouTube client outside Google's app and ecosystem.</p>
-    <div class="why"><span class="tag">No clear trigger</span><p>No fresh release, HN post, or press turned up to explain today's bump specifically; the project has been a hard fork with independent development since 2022.</p></div>
+    <p class="what">PipePipe is an Android app forked from NewPipe in 2022 that lets people browse YouTube ad-free with SponsorBlock, dislike counts, and live-chat overlays, run independently of NewPipe's own release cycle. It competes directly with NewPipe and other de-Googled YouTube clients.</p>
+    <div class="why"><span class="tag">No clear trigger</span><p>No clear trigger found.</p></div>
   </article>
   <article class="repo">
     <div class="repo-head"><span class="rank">08</span><h3><a href="https://github.com/vercel-labs/scriptc">vercel-labs/<b>scriptc</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 5,221</span><span class="today">+76 today</span></div>
-    <div class="momentum"><span class="track"><span class="fill" style="--m:5%"></span></span>momentum 1.5%</div>
-    <p class="what">An experimental compiler from Vercel Labs that turns TypeScript/JavaScript into small native binaries (C, LLVM IR, WASM) with no embedded JS engine &mdash; startup around 2.4ms versus ~47ms baseline, memory down from ~100MB to ~4MB. Competes conceptually with Bun/Deno's "fast startup" pitch, but goes further by dropping the JS runtime entirely for statically-typed code.</p>
-    <div class="why evidence"><span class="tag">Evidence</span><p>Active press wave this week: <a href="https://www.infoq.com/news/2026/09/vercel-scriptc-node/">InfoQ</a>, <a href="https://www.heise.de/en/news/Vercel-s-scriptc-runs-TypeScript-natively-11388382.html">Heise</a>, <a href="https://www.itwriting.com/blog/12467-vercels-scriptc-is-a-typescript-to-native-compiler-how-did-we-get-here.html">Tim Anderson's IT Writing</a> and a <a href="https://news.ycombinator.com/item?id=49063175">Hacker News thread</a> all cover it, driven by Vercel's name and the "no JS engine" framing.</p></div>
+    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 5,245</span><span class="today">+76 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:5%"></span></span>momentum 1.4%</div>
+    <p class="what">scriptc compiles TypeScript straight to native executables, WebAssembly, or C/LLVM IR without bundling a JavaScript engine, letting developers ship small, fast-starting CLIs and servers. It competes with Bun/Deno's compile modes and with Go/Rust for lightweight native binaries.</p>
+    <div class="why evidence"><span class="tag">Evidence</span><p>A fresh Vercel Labs project (repo created 2026-07-22) that drew a <a href="https://news.ycombinator.com/item?id=49063175">Hacker News discussion</a> plus coverage from <a href="https://www.heise.de/en/news/Vercel-s-scriptc-runs-TypeScript-natively-11388382.html">heise.de</a> and InfoQ.</p></div>
   </article>
   <article class="repo">
     <div class="repo-head"><span class="rank">09</span><h3><a href="https://github.com/rohitg00/ai-engineering-from-scratch">rohitg00/<b>ai-engineering-from-scratch</b></a></h3></div>
-    <div class="meta"><span class="lang"><i style="--c:#3572A5"></i>Python</span><span>★ 58,779</span><span class="today">+848 today</span></div>
+    <div class="meta"><span class="lang"><i style="--c:#3572A5"></i>Python</span><span>★ 58,840</span><span class="today">+848 today</span></div>
     <div class="momentum"><span class="track"><span class="fill" style="--m:5%"></span></span>momentum 1.4%</div>
-    <p class="what">A free, 500+ lesson curriculum that teaches AI engineering by having students implement algorithms (backprop, tokenizers, attention, agent loops) from scratch before using production frameworks, spanning four languages.</p>
-    <div class="why evidence"><span class="tag">Evidence</span><p>The author published a promotional write-up, <a href="https://dev.to/rohitg00/build-it-then-use-it-how-i-wrote-435-ai-engineering-lessons-from-scratch-5d2d">"Build It, Then Use It: How I Wrote 435 AI Engineering Lessons From Scratch"</a>, on DEV Community, and the curriculum was separately featured in DEV's <a href="https://dev.to/wonderlab/one-open-source-project-per-day-73-ai-engineering-from-scratch-build-ai-full-stack-skills-from-355h">"One Open Source Project per Day"</a> series this week &mdash; matching the timing of the star bump.</p></div>
+    <p class="what">A 523-lesson, 20-phase curriculum that has learners implement ML/AI algorithms &mdash; from backprop to agent loops &mdash; by hand before using frameworks, aimed at developers who want to understand AI internals rather than just call APIs. It competes with bootcamp-style courses and framework-first tutorials.</p>
+    <div class="why guess"><span class="tag">Guess</span><p>The repo is already well past its initial launch (58k+ stars, an associated book series and website), so today's gain looks like continued organic/SEO-driven growth from its creator's other popular projects rather than one specific event.</p></div>
   </article>
   <h2>Still trending</h2>
-  <p class="empty">None today &mdash; this is still the first digest in this repository's memory, so there's no prior-report history to compare against yet.</p>
+  <p class="empty">None &mdash; this is the first digest with a prior day to compare against, and none of today's repos appeared in an earlier one yet.</p>
   <h2>Giants</h2>
-  <p class="empty">None today. No long-established, huge-star-count repo (the vscode/tensorflow pattern) showed up on the list.</p>
+  <p class="empty">None today &mdash; every trending repo is gaining well above the ~1% "background noise" threshold.</p>
   <footer>Generated by a Claude routine · <a href="https://github.com/trending">github.com/trending</a></footer>
 </main>
 </body>
