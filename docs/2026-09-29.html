@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub Trending · 2026-09-29</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <nav class="crumbs">
+    <a href="index.html">All digests</a>
+    <span class="pager"><a href="2026-09-28.html">← Previous</a><span class="off">Next →</span></span>
+  </nav>
+  <p class="kicker">GitHub Trending · Daily digest</p>
+  <h1>Tuesday, 29 September 2026</h1>
+  <ul class="stats"><li><b>5</b> new</li><li><b>8</b> still trending</li><li><b>1</b> giants</li></ul>
+  <section class="themes">
+    <h2>Today's themes</h2>
+    <ul>
+      <li>NVIDIA's official September 28 launch of OpenShell &mdash; paired with a new hardware-based "Sentry" monitor &mdash; puts AI-agent security on the trending page for the first time, right next to the agent-orchestration cluster (paperclip, openrig, hindsight) now on its third straight day.</li>
+      <li>Two of today's new repos are self-hosted "own your infra" tools that both shipped major releases in the last 48 hours: Openship (deploy platform, v0.8.0) and dbx (database client, two releases in two days) &mdash; both pitching themselves as AI-agent-friendly alternatives to heavier incumbents.</li>
+      <li>This environment's network policy still blocks direct HTML scraping of github.com, so today's list was read through a summarizing fetch tool; it consistently returned the same 14 repositories across four independent passes, short of the usual 15&ndash;25, so treat the count as a tool limit rather than confirmation the real page only had 14.</li>
+    </ul>
+  </section>
+  <h2>New today</h2>
+  <article class="repo">
+    <div class="repo-head"><span class="rank">01</span><h3><a href="https://github.com/NVIDIA/OpenShell">NVIDIA/<b>OpenShell</b></a></h3></div>
+    <div class="meta"><span class="lang"><i style="--c:#dea584"></i>Rust</span><span>★ 9,873</span><span class="today">+978 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:33%"></span></span>momentum 9.9%</div>
+    <p class="what">OpenShell is NVIDIA's open-source runtime that sandboxes autonomous AI agents at the kernel level (Landlock LSM + seccomp BPF), letting them touch files, APIs, and credentials only within an enforced, formally-verified policy &mdash; the agent never sees the real secret. It's aimed at enterprises running agent fleets and competes with ad-hoc container/VM sandboxing and other emerging "agent safety runtime" projects.</p>
+    <div class="why evidence"><span class="tag">Evidence</span><p>NVIDIA officially unveiled it September 28, 2026 as part of its <a href="https://nvidianews.nvidia.com/news/open-agent-safety-platform">Open Agent Safety Platform</a> (OpenShell software paired with a BlueField-4-based "Sentry" hardware monitor) at GTC San Jose, with launch partners Cisco, SAP, and Cadence, plus coverage on NVIDIA's dev blog and a same-day Hacker News post.</p></div>
+  </article>
+  <article class="repo">
+    <div class="repo-head"><span class="rank">02</span><h3><a href="https://github.com/oblien/openship">oblien/<b>openship</b></a></h3></div>
+    <div class="meta"><span class="lang"><i style="--c:#3178c6"></i>TypeScript</span><span>★ 13,544</span><span class="today">+436 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:11%"></span></span>momentum 3.2%</div>
+    <p class="what">Openship is a self-hosted deployment platform that points at a git repo and automatically builds, containerizes, routes traffic to, and issues TLS certs for an app &mdash; usable from a desktop app, web dashboard, or CLI with no YAML config. It competes with hosted PaaS platforms like Railway, Render, and Coolify for teams that want their own always-on or on-demand deploy control plane.</p>
+    <div class="why evidence"><span class="tag">Evidence</span><p>v0.8.0 shipped September 27, 2026, adding server clusters, private networking, and multi-server application scaling, a substantial feature jump landing two days before today's trending appearance.</p></div>
+  </article>
+  <article class="repo">
+    <div class="repo-head"><span class="rank">03</span><h3><a href="https://github.com/VectifyAI/PageIndex">VectifyAI/<b>PageIndex</b></a></h3></div>
+    <div class="meta"><span class="lang"><i style="--c:#3572A5"></i>Python</span><span>★ 36,714</span><span class="today">+822 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:7%"></span></span>momentum 2.2%</div>
+    <p class="what">PageIndex is a "vectorless" retrieval system that indexes long documents &mdash; financial reports, legal contracts, technical manuals &mdash; as a reasoning tree an LLM navigates directly, instead of chunking them into a vector database. It's aimed at RAG developers working with complex professional documents and competes directly with embedding-based vector-DB RAG stacks.</p>
+    <div class="why guess"><span class="tag">Guess</span><p>The project is over a year old (first launched on HN in April 2025 and again with 192 points in August 2025) and shows only routine commits through late September with no single new announcement found; today's burst looks more like a newsletter/roundup mention or renewed interest in vectorless RAG than one dated event.</p></div>
+  </article>
+  <article class="repo">
+    <div class="repo-head"><span class="rank">04</span><h3><a href="https://github.com/t8y2/dbx">t8y2/<b>dbx</b></a></h3></div>
+    <div class="meta"><span class="lang"><i style="--c:#dea584"></i>Rust</span><span>★ 21,620</span><span class="today">+460 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:7%"></span></span>momentum 2.1%</div>
+    <p class="what">dbx is a ~15-25MB desktop/CLI/Docker database client covering 100+ databases (MySQL, Postgres, Redis, MongoDB, DuckDB, ClickHouse, etc.) with a built-in AI SQL assistant and an MCP server so coding agents can query databases directly. It competes with heavier GUI clients like DBeaver and TablePlus by positioning itself as the lightweight, AI-native alternative.</p>
+    <div class="why evidence"><span class="tag">Evidence</span><p>The maintainer shipped three releases in two days (v0.6.26 and v0.6.27 on September 27-28, plus a packages release), and has been actively cross-posting the project on <a href="https://dev.to/t8y2/dbx-an-open-source-15-mb-database-client-for-17-databases-built-with-tauri-45oe">dev.to</a> and HelloGitHub &mdash; a self-promotion push rather than one single external trigger.</p></div>
+  </article>
+  <article class="repo">
+    <div class="repo-head"><span class="rank">05</span><h3><a href="https://github.com/averygan/reclip">averygan/<b>reclip</b></a></h3></div>
+    <div class="meta"><span class="lang"><i style="--c:#e34c26"></i>HTML</span><span>★ 9,793</span><span class="today">+114 today</span></div>
+    <div class="momentum"><span class="track"><span class="fill" style="--m:4%"></span></span>momentum 1.2%</div>
+    <p class="what">reclip is a single-file, self-hosted web UI wrapper around yt-dlp that lets someone download video or audio from over a thousand sites with quality selection and bulk downloading. It competes with hosted "video downloader" websites and other yt-dlp front-ends like MeTube.</p>
+    <div class="why"><span class="tag">No clear trigger</span><p>No releases and no meaningful Hacker News or Reddit discussion turned up; the growth looks like word-of-mouth or a small blog/video mention rather than one identifiable event.</p></div>
+  </article>
+  <h2>Still trending</h2>
+  <ul class="compact">
+    <li><a href="https://github.com/vectorize-io/hindsight">vectorize-io/hindsight</a><span>day 3 · +4,561 today</span></li>
+    <li><a href="https://github.com/debpalash/VoiceStudio">debpalash/VoiceStudio</a><span>day 3 · +3,221 today</span></li>
+    <li><a href="https://github.com/paperclipai/paperclip">paperclipai/paperclip</a><span>day 3 · +3,197 today</span></li>
+    <li><a href="https://github.com/rohitg00/ai-engineering-from-scratch">rohitg00/ai-engineering-from-scratch</a><span>day 2 (gap) · +1,287 today</span></li>
+    <li><a href="https://github.com/dream-num/univer">dream-num/univer</a><span>day 3 · +1,099 today</span></li>
+    <li><a href="https://github.com/mvschwarz/openrig">mvschwarz/openrig</a><span>day 3 · +734 today</span></li>
+    <li><a href="https://github.com/willfaust/Madeira">willfaust/Madeira</a><span>day 2 (gap) · +229 today</span></li>
+    <li><a href="https://github.com/cs341-illinois/coursebook">cs341-illinois/coursebook</a><span>day 2 · +195 today</span></li>
+  </ul>
+  <h2>Giants</h2>
+  <ul class="compact">
+    <li><a href="https://github.com/rakyll/hey">rakyll/hey</a><span>★ 20,370 · +31 today</span></li>
+  </ul>
+  <footer>Generated by a Claude routine · <a href="https://github.com/trending">github.com/trending</a></footer>
+</main>
+</body>
+</html>
